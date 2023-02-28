@@ -1,0 +1,79 @@
+@import "config/vars.scss";
+@import "config/mixins.scss";
+
+body {
+    .custom-border {
+        border: $containerBorderColor;
+        padding: 20px;
+    }
+
+    .btn {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    h1 {
+        @include verdanaFont(20pt, 10px, 20px);
+        color: $h1TextColor;
+        text-shadow: 0.1em 0.1em 0.2em $h1ShadowColor;
+        border: $h1BorderColor;
+        background: $h1BgColor;
+
+        &:hover {
+            cursor: text;
+        }
+    }
+
+    h2 {
+        @include tahomaFont(18pt, 8px, 15px);
+        color: $h2TextColor;
+        border-top: $h2BorderTopColor;
+        border-bottom: $h2BorderBottomColor;
+        background: $h2BgColor;
+    }
+
+    ul {
+        width: 55%;
+        list-style: square;
+
+        li {
+            background: $listBgColor;
+        }
+    }
+
+    .table {
+        .table__one {
+            .table-border {
+                border: $tableOneBorderColor;
+                padding: 20px;
+            }
+
+            tr {
+                td {
+                    outline-offset: -4px;
+                    outline: $tableOneCellBorderColor;
+
+                    &:hover {
+                        cursor: help;
+                    }
+                }
+            }
+        }
+
+        .table__two {
+            .table-border {
+                border: $tableTwoBorderColor;
+                padding: 20px;
+            }
+
+            tr {
+                td {
+                    outline-offset: -4px;
+                    outline: $tableTwoCellBorderColor;
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+}

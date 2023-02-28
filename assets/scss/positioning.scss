@@ -1,0 +1,8 @@
+@import "config/vars.scss";
+@import "config/mixins.scss";
+
+body{
+    .card-border{
+        border: 40px dotted darkblue;
+    }
+}

@@ -1,0 +1,13 @@
+@mixin verdanaFont($fs, $ls, $ws) {
+    font-family: $verdanaFont;
+    font-size: $fs;
+    letter-spacing: $ls;
+    word-spacing: $ws;
+}
+
+@mixin tahomaFont($fs, $ls, $ws) {
+    font-family: $tahomaFont;
+    font-size: $fs;
+    letter-spacing: $ls;
+    word-spacing: $ws;
+}

@@ -1,0 +1,57 @@
+body .custom-border {
+  border: 20px solid maroon;
+  padding: 20px;
+}
+body .btn:hover {
+  cursor: pointer;
+}
+body h1 {
+  font-family: "Verdana";
+  font-size: 20pt;
+  letter-spacing: 10px;
+  word-spacing: 20px;
+  color: purple;
+  text-shadow: 0.1em 0.1em 0.2em lightslategray;
+  border: 2px dashed #dd22ff;
+  background: #ccaaff;
+}
+body h1:hover {
+  cursor: text;
+}
+body h2 {
+  font-family: "Tahoma";
+  font-size: 18pt;
+  letter-spacing: 8px;
+  word-spacing: 15px;
+  color: #4b0082;
+  border-top: 2px dotted #8244FF;
+  border-bottom: 2px dashed #8244FF;
+  background: #cc99ff;
+}
+body ul {
+  width: 55%;
+  list-style: square;
+}
+body ul li {
+  background: Plum;
+}
+body .table .table__one .table-border {
+  border: 3px solid navy;
+  padding: 20px;
+}
+body .table .table__one tr td {
+  outline-offset: -4px;
+  outline: 2px solid #8899CD;
+}
+body .table .table__one tr td:hover {
+  cursor: help;
+}
+body .table .table__two .table-border {
+  border: 3px dotted #45CCFF;
+  padding: 20px;
+}
+body .table .table__two tr td {
+  outline-offset: -4px;
+  outline: 2px dashed blue;
+  padding: 0.5rem;
+}

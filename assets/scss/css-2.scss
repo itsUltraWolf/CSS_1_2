@@ -1,0 +1,123 @@
+@import "config/vars.scss";
+@import "config/mixins.scss";
+
+body {
+    .custom-border {
+        border: $containerBorderColor;
+        padding: 20px;
+    }
+
+    .btn {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    h1 {
+        @include verdanaFont(20pt, 10px, 20px);
+        color: $h1TextColor;
+        text-shadow: 0.1em 0.1em 0.2em $h1ShadowColor;
+        border: $h1BorderColor;
+        background: $h1BgColor;
+
+        &:hover {
+            cursor: text;
+        }
+    }
+
+    h2 {
+        @include tahomaFont(18pt, 8px, 15px);
+        color: $h2TextColor;
+        border-top: $h2BorderTopColor;
+        border-bottom: $h2BorderBottomColor;
+        background: $h2BgColor;
+    }
+
+    ul {
+        width: 55%;
+        list-style: square;
+
+        :nth-child(even) {
+            list-style-type: circle;
+            background: aquamarine;
+        }
+
+        :nth-child(odd) {
+            background: bisque;
+        }
+
+        li {
+            background: $listBgColor;
+
+            &:first-child {
+                background: lightsalmon;
+            }
+
+            &:last-child {
+                background: fuchsia;
+            }
+        }
+    }
+
+    span {
+        background: lime !important;
+        color: red;
+    }
+
+    .table-one {
+        border: $tableOneBorderColor;
+        padding: 20px;
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 10px;
+
+            td {
+                padding: 4px;
+
+                &:hover {
+                    cursor: help;
+                }
+            }
+
+            thead {
+                background: lightblue;
+            }
+
+            tbody {
+                tr {
+                    background: fuchsia;
+
+                    &:nth-child(odd) {
+                        background: aquamarine;
+                    }
+
+                    &:active {
+                        background: yellow;
+                    }
+
+                    td {
+                        &:hover {
+                            outline: 3px solid red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .table-two {
+        border: $tableTwoBorderColor;
+        padding: 20px;
+
+        table {
+            border-collapse: separate;
+            border-spacing: 4px;
+
+            td {
+                border: $tableTwoCellBorderColor;
+                padding: 0.5rem;
+            }
+        }
+    }
+}
